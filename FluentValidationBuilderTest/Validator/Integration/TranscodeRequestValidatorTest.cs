@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
+﻿using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
-using FluentValidation.TestHelper;
 using FluentValidationBuilder.Model;
 using FluentValidationBuilder.Validator;
 using NUnit.Framework;

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text.Json.Serialization;
+using FluentValidationBuilder.JsonConverter;
 
 namespace FluentValidationBuilder.Model
 {
@@ -13,5 +14,10 @@ namespace FluentValidationBuilder.Model
 
         [JsonPropertyName("checksum")]
         public string Checksum { get; set; }
+
+        // checkumAlgorithm
+        [JsonConverter(typeof(ChecksumAlgorithmConverter))]
+        [JsonPropertyName("checkumAlgorithm")]
+        public ChecksumAlgorithmType ChecksumAlgorithm { get; set; }
     }
 }

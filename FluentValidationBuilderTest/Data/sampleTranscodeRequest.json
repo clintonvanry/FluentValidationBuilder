@@ -12,6 +12,7 @@
     "file": {
       "url": "s3://bucket/folder/file.ext",
       "size": 1233044,
+      "checkumAlgorithm": "",
       "checksum": "7CAE55229DE2ECB12C9A9A43020996771998F411F2B559E54B8EBA3484DC8988"
     },
     "videoInformation": {
