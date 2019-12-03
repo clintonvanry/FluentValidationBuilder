@@ -1,7 +1,7 @@
 ﻿using FluentValidationBuilder.Validator;
 using NUnit.Framework;
 
-namespace FluentValidationBuilderTest.Validator
+namespace FluentValidationBuilderTest.Validator.Unit
 {
     [TestFixture]
     public class VideoDescriptionElementValidatorTest

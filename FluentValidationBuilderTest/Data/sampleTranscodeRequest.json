@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "correlationId": "correlationId",
+    "callbackUrl": "https://api.imdcloud:9090/message",
+    "region": "eu-west-1",
+    "reference": {
+      "id": 1000,
+      "name": "ABC/PROD001/010"
+    }
+  },
+  "input": {
+    "file": {
+      "url": "s3://bucket/folder/file.ext",
+      "size": 1233044,
+      "checksum": "7CAE55229DE2ECB12C9A9A43020996771998F411F2B559E54B8EBA3484DC8988"
+    },
+    "videoInformation": {
+      "duration": 250,
+      "layout": {
+        "preRoll": 0,
+        "postRoll": 0
+      }
+    }
+  },
+  "outputs": [
+    {
+      "preset": "presetName",
+      "fileUrl": "s3://bucket/folder/file.ext",
+      "videoDescription": {
+        "sequence": {
+          "header": [
+            {
+              "type": "colour",
+              "url": "",
+              "color": "#000000",
+              "duration": 50
+            },
+            {
+              "type": "slate",
+              "url": "https://api.imdcloud:9090/message/clock.jpg",
+              "color": "",
+              "duration": 100
+            }
+
+          ],
+          "tail": [
+            {
+              "type": "colour",
+              "url": "",
+              "color": "#000000",
+              "duration": 50
+            },
+            {
+              "type": "slate",
+              "url": "https://api.imdcloud:9090/message/clock.jpg",
+              "color": "",
+              "duration": 100
+            }
+          ]
+        },
+        "firstFrameTimecode": "00:00:00:00",
+        "conversion": {
+          "standard": "SD",
+          "aspectRatio": "FourteenByNine"
+        }
+      }
+    }
+  ]
+}

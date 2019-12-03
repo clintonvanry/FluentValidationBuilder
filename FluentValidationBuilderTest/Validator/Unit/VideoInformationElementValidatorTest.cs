@@ -4,7 +4,7 @@ using FluentValidationBuilder.Model;
 using FluentValidationBuilder.Validator;
 using NUnit.Framework;
 
-namespace FluentValidationBuilderTest.Validator
+namespace FluentValidationBuilderTest.Validator.Unit
 {
     [TestFixture]
     public class VideoInformationElementValidatorTest
@@ -50,9 +50,6 @@ namespace FluentValidationBuilderTest.Validator
 
             result.ShouldHaveValidationErrorFor(m => m.Layout);
         }
-
-
-
 
         public static IEnumerable<TestCaseData> GetLayoutTestCases
         {
