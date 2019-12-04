@@ -22,7 +22,6 @@ namespace FluentValidationBuilderTest.JsonConverter
         [Test]
         public void when_empty_string_supplied_in_json_return_enum_value_none()
         {
-            //var result = JsonSerializer.Deserialize<ChecksumAlgorithmType>("{\"checkumAlgorithm\":\"\"}",options);
             var result = JsonSerializer.Deserialize<ChecksumAlgorithmType>("\"\"", options);
             Assert.AreEqual(ChecksumAlgorithmType.None, result);
 

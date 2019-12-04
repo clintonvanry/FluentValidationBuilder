@@ -18,10 +18,4 @@ namespace FluentValidationBuilder.Model
 
     }
 
-    public class AudioDescriptionElement
-    {
-
-    }
-
-
 }

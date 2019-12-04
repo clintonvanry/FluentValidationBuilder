@@ -1,0 +1,10 @@
+﻿finish the model
+finish the validators
+finish the tests for the validators
+
+design the retrieval of the preset
+--  likely a repo so that it can be mocked
+-- model for the active message
+-- mapper to build the active message
+
+tests for the mapper
