@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
 using FluentValidationBuilder.Model;
+using FluentValidationBuilder.Model.Transcode;
 using FluentValidationBuilder.Validator;
 using NUnit.Framework;
 

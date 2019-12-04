@@ -1,4 +1,4 @@
-﻿namespace FluentValidationBuilder.Model
+﻿namespace FluentValidationBuilder.Model.Transcode
 {
     public enum VideoAspectRatioType
     {

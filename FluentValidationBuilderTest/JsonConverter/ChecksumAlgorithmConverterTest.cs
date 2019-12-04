@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using FluentValidationBuilder.JsonConverter;
 using FluentValidationBuilder.Model;
+using FluentValidationBuilder.Model.Transcode;
 using NUnit.Framework;
 
 

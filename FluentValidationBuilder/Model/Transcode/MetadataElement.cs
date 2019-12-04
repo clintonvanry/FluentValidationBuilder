@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.Json.Serialization;
 
-namespace FluentValidationBuilder.Model
+namespace FluentValidationBuilder.Model.Transcode
 {
     public class MetadataElement
     {

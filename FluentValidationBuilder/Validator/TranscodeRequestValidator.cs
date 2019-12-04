@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidationBuilder.Model;
+using FluentValidationBuilder.Model.Transcode;
 
 namespace FluentValidationBuilder.Validator
 {

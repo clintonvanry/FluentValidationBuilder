@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using FluentValidation.TestHelper;
 using FluentValidationBuilder.Model;
+using FluentValidationBuilder.Model.Transcode;
 using FluentValidationBuilder.Validator;
 using NUnit.Framework;
 

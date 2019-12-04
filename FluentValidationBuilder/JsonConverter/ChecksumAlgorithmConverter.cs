@@ -2,6 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using FluentValidationBuilder.Model;
+using FluentValidationBuilder.Model.Transcode;
 
 namespace FluentValidationBuilder.JsonConverter
 {

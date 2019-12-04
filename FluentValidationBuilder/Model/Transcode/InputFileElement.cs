@@ -2,7 +2,7 @@
 using System.Text.Json.Serialization;
 using FluentValidationBuilder.JsonConverter;
 
-namespace FluentValidationBuilder.Model
+namespace FluentValidationBuilder.Model.Transcode
 {
     public class InputFileElement
     {
