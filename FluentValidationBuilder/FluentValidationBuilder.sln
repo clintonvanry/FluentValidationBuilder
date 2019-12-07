@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidationBuilder", "FluentValidationBuilder.csproj", "{E372F269-56DA-495C-A64A-83EE0A53BBFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentValidationBuilder", "FluentValidationBuilder.csproj", "{E372F269-56DA-495C-A64A-83EE0A53BBFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidationBuilderTest", "..\FluentValidationBuilderTest\FluentValidationBuilderTest.csproj", "{2C80E697-FF02-44AC-A860-4E4D2B00A919}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentValidationBuilderTest", "..\FluentValidationBuilderTest\FluentValidationBuilderTest.csproj", "{2C80E697-FF02-44AC-A860-4E4D2B00A919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidationBuilderData", "..\FluentValidationBuilderData\FluentValidationBuilderData.csproj", "{910D7091-1AE0-46FF-8244-90AA97039C92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2C80E697-FF02-44AC-A860-4E4D2B00A919}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C80E697-FF02-44AC-A860-4E4D2B00A919}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C80E697-FF02-44AC-A860-4E4D2B00A919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{910D7091-1AE0-46FF-8244-90AA97039C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{910D7091-1AE0-46FF-8244-90AA97039C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{910D7091-1AE0-46FF-8244-90AA97039C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{910D7091-1AE0-46FF-8244-90AA97039C92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

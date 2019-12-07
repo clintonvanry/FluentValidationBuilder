@@ -4,7 +4,9 @@ finish the tests for the validators
 
 design the retrieval of the preset
 --  likely a repo so that it can be mocked
--- model for the active message
+-- model for the active message -- partially done
 -- mapper to build the active message
 
 tests for the mapper
+logic in the active message to check if the message exists or needs to be replaced etc.
+logic to build the correlationid
