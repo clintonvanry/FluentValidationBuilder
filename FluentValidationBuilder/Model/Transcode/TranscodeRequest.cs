@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 namespace FluentValidationBuilder.Model.Transcode
 {
 
-    public class TranscodeRequest
+    public class TranscodeRequest: ICommand
     {
         [JsonPropertyName("metadata")]
         public MetadataElement Metadata { get; set; }
@@ -16,5 +16,4 @@ namespace FluentValidationBuilder.Model.Transcode
         public IList<OutputElement> Outputs { get; set; }
 
     }
-
 }

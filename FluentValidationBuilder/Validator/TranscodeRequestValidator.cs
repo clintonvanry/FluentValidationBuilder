@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using FluentValidationBuilder.Model;
 using FluentValidationBuilder.Model.Transcode;
 
 namespace FluentValidationBuilder.Validator
@@ -10,6 +9,7 @@ namespace FluentValidationBuilder.Validator
         {
             RuleFor(tr => tr.Metadata).NotNull().SetValidator(new MetadataElementValidator());
             RuleFor(tr => tr.Input).NotNull().SetValidator(new InputElementValidator());
+            RuleForEach(m => m.Outputs).SetValidator(new OutputElementValidator());
         }
     }
 }

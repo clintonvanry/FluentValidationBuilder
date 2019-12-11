@@ -38,7 +38,7 @@ namespace FluentValidationBuilder.Validator
 
         }
 
-        protected override bool PreValidate(ValidationContext<VideoInformationElement> context, ValidationResult result)
+        protected override bool PreValidate(ValidationContext<VideoInformationElement> context, FluentValidation.Results.ValidationResult result)
         {
             // we need to pass the duration
             var duration = context.InstanceToValidate?.Duration ?? 0;
@@ -46,5 +46,6 @@ namespace FluentValidationBuilder.Validator
 
             return base.PreValidate(context, result);
         }
+
     }
 }

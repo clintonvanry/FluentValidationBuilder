@@ -1,10 +1,19 @@
 ﻿using System;
 using System.Text;
+using FluentValidationBuilder.Builder;
 
 namespace FluentValidationBuilder.Model.ActiveMessage
 {
     public class ActiveMessage
     {
+        public ActiveMessage()
+        {
+            // active message must have a body object
+            // does not need a metadata object
+            this.Body = new TranscodeBody();
+        }
+
+
         public CallerType Caller { get; set; }
 
         public string CorrelationId { get; set; }
@@ -34,5 +43,10 @@ namespace FluentValidationBuilder.Model.ActiveMessage
         public ProviderType Provider { get; set; }
 
         public TranscodeBody Body { get; set; }
+
+        public static ActiveMessageBuilder Builder()
+        {
+             return new ActiveMessageBuilder(new ActiveMessage());
+        }
     }
 }

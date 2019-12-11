@@ -1,7 +1,7 @@
 ﻿finish the model
 finish the validators
 finish the tests for the validators
-
+,
 design the retrieval of the preset
 --  likely a repo so that it can be mocked
 -- model for the active message -- partially done
@@ -10,3 +10,13 @@ design the retrieval of the preset
 tests for the mapper
 logic in the active message to check if the message exists or needs to be replaced etc.
 logic to build the correlationid
+
+
+-- logic for correlationid
+-- if one is supplied use it else generate with <guid>_formatid
+
+-- no handling for duplicate message for transcode. A risk here especially if we are generating correlationid
+-- perhaps the correlationid that we generates is a little smarter.
+-- for transcode it is about the sourcefile and preset
+-- but we can multiple presets in hte body
+-- can we query this out and flatten to check for it

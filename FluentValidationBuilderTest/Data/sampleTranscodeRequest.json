@@ -26,7 +26,7 @@
   "outputs": [
     {
       "preset": "presetName",
-      "fileUrl": "s3://bucket/folder/file.ext",
+      "url": "s3://bucket/folder/file.ext",
       "videoDescription": {
         "sequence": {
           "header": [

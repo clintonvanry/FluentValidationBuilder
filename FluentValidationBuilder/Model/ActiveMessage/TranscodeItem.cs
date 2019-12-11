@@ -1,10 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace FluentValidationBuilder.Model.ActiveMessage
 {
     public class TranscodeItem
     {
+        public TranscodeItem()
+        {
+            // these should exist as minimum for this instance.
+            Tasks = new List<TranscodeTask>();    
+            CustomValues = new List<TranscodeCustomValue>();
+        }
+
         [JsonPropertyName("Size")]
         public long FileSize { get; set; }
 
@@ -13,6 +21,10 @@ namespace FluentValidationBuilder.Model.ActiveMessage
 
         [JsonPropertyName("CheckSum")]
         public string CheckSum { get; set; }
+
+        [JsonIgnore]
+        // placeholder used by the mapping
+        public string PresetName { get; set; }
 
         [JsonPropertyName("FormatId")]
         public int FormatId { get; set; }

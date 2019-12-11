@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System;
+using System.Text.Json.Serialization;
 
 namespace FluentValidationBuilder.Model.Transcode
 {
@@ -7,11 +8,14 @@ namespace FluentValidationBuilder.Model.Transcode
         [JsonPropertyName("preset")]
         public string Preset { get; set; }
 
-        [JsonPropertyName("fileUrl")]
-        public string FileUrl { get; set; }
+        [JsonPropertyName("url")]
+        public Uri Url { get; set; }
 
         [JsonPropertyName("videoDescription")]
         public VideoDescriptionElement VideoDescription { get; set; }
+
+        [JsonPropertyName("audioDescription")]
+        public AudioDescriptionElement AudioDescription { get; set; }
 
     }
 }
