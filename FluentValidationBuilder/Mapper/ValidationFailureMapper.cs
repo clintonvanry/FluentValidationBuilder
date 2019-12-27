@@ -86,11 +86,11 @@ namespace FluentValidationBuilder.Mapper
         {
             transcodeItem.CustomValues.Upsert(TranscodeCustomValueKeys.FirstFrameTimecodeKey,videoDescription.FirstFrameTimecode);
 
-            if (videoDescription?.Sequence?.Header.Any() ?? false)
+            if (videoDescription?.Sequence?.Header?.Any() ?? false)
             {
                 ProcessSequenceElements(videoDescription.Sequence.Header, transcodeItem,GetHeaderSequenceKeys());
             }
-            if (videoDescription?.Sequence?.Tail.Any() ?? false)
+            if (videoDescription?.Sequence?.Tail?.Any() ?? false)
             {
                 ProcessSequenceElements(videoDescription.Sequence.Tail, transcodeItem,GetTailSequenceKeys());
             }
